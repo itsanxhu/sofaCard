@@ -1,14 +1,16 @@
 import { Link } from "lucide-react";
 
-const Card = ({ title, category, sku, productName, brand }) => {
+const Card = ({ id, title, category, sku, productName, brand, img }) => {
   return (
     <div className="w-96 h-22 p-1.5 bg-olive-100 rounded-xl">
       <div className="flex justify-between">
         <div className="flex gap-4">
-          <div className="w-20 h-19">
+          <div className="w-20 h-19 overflow-hidden rounded-lg">
             <img
-              className="w-full h-full object-cover rounded-lg"
-              src="https://images.unsplash.com/photo-1698936061086-2bf99c7b9fc5?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className={`w-full h-full object-cover object-center rounded-lg ${
+                id === 2 ? "scale-150" : ""
+              }`}
+              src={img}
               alt="Sofa img"
             />
           </div>
