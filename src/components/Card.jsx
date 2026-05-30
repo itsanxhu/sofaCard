@@ -2,7 +2,7 @@ import { Link } from "lucide-react";
 
 const Card = ({ id, title, category, sku, productName, brand, img }) => {
   return (
-    <div className="w-96 h-22 p-1.5 bg-olive-100 rounded-xl">
+    <div className="w-96 h-22 p-1.5 bg-olive-100 rounded-xl shadow-sm">
       <div className="flex justify-between">
         <div className="flex gap-4">
           <div className="w-20 h-19 overflow-hidden rounded-lg">
