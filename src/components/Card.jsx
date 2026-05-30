@@ -1,6 +1,6 @@
 import { Link } from "lucide-react";
 
-const Card = () => {
+const Card = ({ title, category, sku, productName, brand }) => {
   return (
     <div className="w-96 h-22 p-1.5 bg-olive-100 rounded-xl">
       <div className="flex justify-between">
@@ -15,10 +15,10 @@ const Card = () => {
 
           <div className="flex flex-col justify-between py-1">
             <div>
-              <p className="font-medium text-[13px]">Sofa</p>
-              <p className="text-[9px] text-neutral-400">DINING ROOM</p>
+              <p className="font-medium text-[13px]">{title}</p>
+              <p className="text-[9px] text-neutral-400">{category}</p>
             </div>
-            <p className="font-medium text-[13px]">DT01</p>
+            <p className="font-medium text-[13px]">{sku}</p>
           </div>
         </div>
 
@@ -26,16 +26,15 @@ const Card = () => {
           <Link size={12} className="text-neutral-400 mt-1" />
           <div className="flex flex-col justify-between">
             <div>
-              <p className="font-medium text-[13px]">Anchor</p>
+              <p className="font-medium text-[13px]">{productName}</p>
               <p className="text-[9px] text-neutral-400">PRODUCT NAME</p>
             </div>
             <div>
-              <p className="font-medium text-[13px]">Frama</p>
+              <p className="font-medium text-[13px]">{brand}</p>
               <p className="text-[9px] text-neutral-400">BRAND</p>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );
