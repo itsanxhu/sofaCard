@@ -12,7 +12,7 @@ const App = () => {
       top: "top-0",
       z: "z-10",
       wrapper:
-        "opacity-60 scale-80 transition-all duration-300 hover:-translate-y-14 hover:scale-100 cursor-pointer hover:opacity-100",
+        "opacity-60 scale-80 transition-all duration-300 hover:-translate-y-14 hover:scale-100 cursor-pointer hover:opacity-100 active:scale-95 transition-transform duration-200",
       img: "/floorLamp.avif",
     },
     {
@@ -25,7 +25,7 @@ const App = () => {
       top: "top-8",
       z: "z-20",
       wrapper:
-        "opacity-80 scale-90 transition-all duration-300 hover:-translate-y-16 hover:scale-100 cursor-pointer hover:opacity-100",
+        "opacity-80 scale-90 transition-all duration-300 hover:-translate-y-16 hover:scale-100 cursor-pointer hover:opacity-100 active:scale-95 transition-transform duration-200",
       img: "/table.avif",
     },
     {
@@ -38,6 +38,8 @@ const App = () => {
       top: "top-16",
       z: "z-30",
       img: "https://pelicanessentials.com/cdn/shop/files/image147068.webp?v=1727285584&width=800",
+      wrapper:
+        "active:scale-95 transition-transform duration-200 cursor-pointer",
       // wrapper:
       //   "transition-all duration-300 hover:-translate-y-10 cursor-pointer",
     },
